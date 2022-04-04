@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+}
+
+.game-area {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* border: 2px solid black; */
+  height: 400px;
+  width: 400px;
+}
+
+.grid-element {
+  height: calc(400px / 3);
+  width: calc(400px / 3);
+  border: 2px solid black;
+  border-radius: 10px;
+  position: relative;
+  top: -6px;
+  left: -6px;
+}
+
+div {
+  border-style: none;
+  color: black;
+  font-size: 30px;
+}
+
+.title {
+  margin-top: 40px;
+}
+
+.footer {
+  margin-bottom: 20px;
+}
+
+.reset-btn {
+  border-style: none;
+  width: 412px;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  background-color: rgb(47, 113, 255);
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  /* border: 2px solid black; */
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: rgba(47, 113, 255, 0.4);
+}
+
+.grid-element {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: #fff;
+}
+
+.grid-element:hover {
+  background-color: #eee;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.winner {
+  margin-top: 20px;
+}
+
+.btn {
+  border-style: none;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  background-color: rgb(47, 113, 255);
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  /* border: 2px solid black; */
+  cursor: pointer;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn:hover {
+  background-color: rgba(47, 113, 255, 0.4);
+}
+
+.choose-game-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
